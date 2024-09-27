@@ -3,6 +3,7 @@ package instituto;
 import anotaciones.Estudiante;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -34,7 +35,7 @@ public class CargadorContexto {
                     annotation.direccion()
             ));
         }
-        
-        return List.of();
+
+        return new ArrayList<>(integerClaseMap.values());
     }
 }
