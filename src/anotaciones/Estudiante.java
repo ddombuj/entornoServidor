@@ -1,3 +1,5 @@
+package anotaciones;
+
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
@@ -5,9 +7,9 @@ import java.lang.annotation.*;
 @Documented
 @Repeatable(Estudiantes.class)
 public @interface Estudiante {
-    String nombre() default "";
-    String fechaNacimiento() default "";
-    int curso() default 0;
+    String nombre();
+    String fechaNacimiento();
+    int curso();
     String direccion() default "No especificada";
 
 
